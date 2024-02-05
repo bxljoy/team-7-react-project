@@ -21,7 +21,7 @@ const CartPopUp = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isOpen]);
+  });
 
   const handleClickOutside = (event) => {
     if (cartRef.current && !cartRef.current.contains(event.target)) {

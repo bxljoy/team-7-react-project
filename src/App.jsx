@@ -1,8 +1,6 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeContext } from './hooks/themeContext';
-import { BookContext } from './hooks/bookContext';
-import { CartPopUpContext } from './hooks/cartPopUpContext';
 import { CategoryContext } from './hooks/categoryContext';
 import Homepage from './pages/HomePage';
 import BookPage from './pages/BookPage';
