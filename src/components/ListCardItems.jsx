@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import CardItem from '../components/CardItem';
 import { BookContext } from '../hooks/bookContext';
-import { CartContext } from '../hooks/CartContext';
+import { CartContext } from '../hooks/cartContext';
 import { LoanCartContext } from '../hooks/loanCartContext';
 import { FilterContext } from '../hooks/filterContext';
 import SpinnerComponent from './SpinnerComponent';
