@@ -1,14 +1,14 @@
 import { useContext } from 'react';
 import CardItem from '../components/CardItem';
-import { BookContext } from '../hooks/bookContext';
 import { CartContext } from '../hooks/cartContext';
 import { LoanCartContext } from '../hooks/loanCartContext';
 import { FilterContext } from '../hooks/filterContext';
 import SpinnerComponent from './SpinnerComponent';
 import noImage from '../assets/No-Image-Placeholder.png';
+import useBookContext from '../hooks/useBookContext';
 
 const ListCardItems = () => {
-  const { books, isLoading } = useContext(BookContext);
+  const { books, isLoading } = useBookContext();
   const { buyItem } = useContext(CartContext);
   const { loanItem } = useContext(LoanCartContext);
   const { filter } = useContext(FilterContext);

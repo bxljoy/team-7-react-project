@@ -1,16 +1,16 @@
 import { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { BsHandbag, BsBrightnessHigh, BsFillMoonFill } from 'react-icons/bs';
-import { BookContext } from '../hooks/bookContext';
 import { ThemeContext } from '../hooks/themeContext';
 import { CartContext } from '../hooks/cartContext';
 import { LoanCartContext } from '../hooks/loanCartContext';
 import { CartPopUpContext } from '../hooks/cartPopUpContext';
 import { CategoryContext } from '../hooks/categoryContext';
 import { FilterContext } from '../hooks/filterContext';
+import useBookContext from '../hooks/useBookContext';
 
 const Header = () => {
-  const { fetchBooksByCategory } = useContext(BookContext);
+  const { fetchBooksByCategory } = useBookContext();
   const [bookSearch, setBookSearch] = useState('');
   const { darkMode, darkModeHandle, textColorClass, bgHeaderColorClass } =
     useContext(ThemeContext);
